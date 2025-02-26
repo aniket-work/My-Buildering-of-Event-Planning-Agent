@@ -3,15 +3,6 @@
 
 This project demonstrates how to build an AI assistant that can have long-running conversations with state management. The assistant can look up weather information and remember previous interactions across sessions.
 
-## Features
-
-- 🧠 **Long-term memory**: Conversations persist across sessions
-- 🔍 **Search integration**: Uses Tavily to look up real-time information
-- 🌐 **LLM integration**: Powered by Groq's Llama-3.3-70b model
-- 📊 **Streamlit UI**: Clean, responsive user interface
-- 📝 **Structured codebase**: Professional project organization
-
-
 ## TL;DR
 I built an app that uses multiple AI agents (Security Architect, Risk Analyst, and Compliance Officer) to automatically review security proposals from different perspectives. The agents discuss the proposal together and generate a comprehensive security report. The code shows how to orchestrate multiple agents, manage their conversation, and present their findings through a clean web interface.
 
@@ -31,18 +22,7 @@ Full Article : [https://medium.com/@learn-simplified/weather-app-with-state-mana
 
 ## Tech Stack
 
-| **Category**   | **Technology**                | **Purpose**                          |
-|----------------|-------------------------------|--------------------------------------|
-| Framework      | Streamlit                     | Web interface and UI components      |
-| AI Graph       | LangGraph                     | Stateful agent architecture          |
-| LLM Service    | Groq (Llama-3.3-70b)          | Natural language processing          |
-| Database       | SQLite                        | Conversation persistence             |
-| Search API     | Tavily                        | Real-time information lookup         |
-| Configuration  | YAML, JSON                    | Application and model settings       |
-| Environment    | python-dotenv                 | API key management                   |
-| Language       | Python                        | Core application logic               |
-| Persistence    | langgraph-checkpoint-sqlite   | State management for conversations   |
-
+![Design Diagram](design_docs/tech_stack.jpg)
 
 ## Closing Thoughts
 The future of AI assistants lies in creating more persistent, context-aware experiences. As large language models continue to improve, we'll see AI assistants that can maintain conversations across days or weeks, remember user preferences, and integrate seamlessly with more data sources and tools. 
@@ -55,7 +35,7 @@ Businesses that adopt these technologies early will gain significant advantages 
 ![Design Diagram](design_docs/design.png)
 
 
-# Tutorial: My Building of Weather App With State Management for Long-Running Conversations
+# Tutorial: My Building of Event Planning Agent
 
 ## Prerequisites
 - Python installed on your system.
@@ -85,7 +65,7 @@ Businesses that adopt these technologies early will gain significant advantages 
 
 **Install Project Dependencies:**
 
-Follow these steps to set up and run the  "My Building of Weather App With State Management for Long-Running Conversations"
+Follow these steps to set up and run the  "My Building of Event Planning Agent"
 
 1. Navigate to your project directory:
    ```
@@ -100,7 +80,7 @@ Follow these steps to set up and run the  "My Building of Weather App With State
    This command installs all the necessary Python packages listed in the requirements.txt file.
 
 
-Run - Hands-On Guide: My Building of Weather App With State Management for Long-Running Conversations
+# Run - Hands-On Guide: My Building of Event Planning Agent
   
    ```
    streamlit run main.py
