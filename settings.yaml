@@ -1,0 +1,43 @@
+# EventPro AI Planner Settings
+
+# OpenAI API Configuration
+openai:
+  default_model: gpt-3.5-turbo
+  timeout_seconds: 30
+
+# LangGraph Configuration
+langgraph:
+  wait_for_completion: true
+  max_iterations: 10
+
+# UI Settings
+ui:
+  theme:
+    primary_color: "#1E3A8A"
+    secondary_color: "#2563EB"
+    accent_color: "#10B981"
+
+  results:
+    max_venues_to_display: 3
+    max_recommendations: 5
+
+# Data Limits
+limits:
+  max_search_results: 1000
+  max_venues: 5
+
+# Weather API Settings
+weather_api:
+  default_params:
+    daily:
+      - weathercode
+      - temperature_2m_max
+      - temperature_2m_min
+      - precipitation_probability_max
+    timezone: auto
+
+# Empty defaults for fallback
+defaults:
+  location: "New York"
+  date: "this weekend"
+  event: "event"
